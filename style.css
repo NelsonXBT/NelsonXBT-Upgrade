@@ -1,0 +1,603 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#030507;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --gold:#f5a623;
+    --green:#00ff88;
+    --purple:#b15cff;
+
+    --card-bg:#05090d;
+    --border:#1b1f26;
+
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    width:100%;
+}
+
+.line{
+    width:50px;
+    height:3px;
+    margin:15px 0 25px;
+    border-radius:100px;
+}
+
+.green{
+    background:var(--green);
+}
+
+.gold{
+    background:var(--gold);
+}
+
+.purple{
+    background:var(--purple);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    width:100%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 40px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+}
+
+.logo .white{
+    color:white;
+}
+
+.logo .gold{
+    color:var(--gold);
+}
+
+.header-right{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.social-icons{
+    display:flex;
+    gap:25px;
+}
+
+.social-icons a{
+    font-size:1.5rem;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:var(--gold);
+}
+
+.about-btn{
+
+    padding:15px 30px;
+
+    border:1px solid var(--gold);
+
+    border-radius:14px;
+
+    color:var(--gold);
+
+    transition:.3s;
+}
+
+.about-btn:hover{
+
+    background:var(--gold);
+    color:#000;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:500px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:120px 20px 80px;
+
+    position:relative;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    background:rgba(245,166,35,.08);
+
+    filter:blur(150px);
+
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+.hero-content{
+
+    max-width:850px;
+
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+
+    font-size:5rem;
+    font-weight:800;
+    line-height:1.1;
+
+    margin-bottom:25px;
+}
+
+.hero h1 .gold{
+    color:var(--gold);
+    background:none;
+}
+
+.hero h1 .white{
+    color:white;
+}
+
+.hero p{
+
+    font-size:1.4rem;
+    line-height:1.8;
+
+    color:#d0d0d0;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    padding:0 20px 80px;
+}
+
+
+.feature-card{
+
+    background:rgba(6,10,14,.8);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:45px;
+
+    backdrop-filter:blur(10px);
+}
+
+.learning-card{
+
+    box-shadow:
+    0 0 30px rgba(0,255,136,.08);
+}
+
+.coaching-card{
+
+    box-shadow:
+    0 0 30px rgba(245,166,35,.08);
+}
+
+.card-icon{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+}
+
+.learning-card .card-icon{
+
+    border:1px solid rgba(0,255,136,.4);
+    color:var(--green);
+}
+
+.coaching-card .card-icon{
+
+    border:1px solid rgba(245,166,35,.4);
+    color:var(--gold);
+}
+
+.feature-card h2{
+
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.feature-card p{
+
+    color:#c8c8c8;
+    line-height:1.8;
+}
+
+.feature-card ul{
+
+    margin:35px 0;
+}
+
+.feature-card li{
+
+    margin-bottom:18px;
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#e8e8e8;
+}
+
+.learning-card li i{
+    color:var(--green);
+}
+
+.coaching-card li i{
+    color:var(--gold);
+}
+
+.card-btn{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:250px;
+
+    padding:18px 24px;
+
+    border-radius:14px;
+
+    transition:.3s;
+}
+
+.green-btn{
+
+    border:1px solid var(--green);
+    color:var(--green);
+}
+
+.gold-btn{
+
+    border:1px solid var(--gold);
+    color:var(--gold);
+}
+
+.card-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+
+    padding:0 20px 80px;
+
+    background:rgba(6,10,14,.8);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+}
+
+.community-left{
+
+    display:flex;
+    gap:25px;
+
+    align-items:flex-start;
+
+    padding:45px;
+}
+
+.community-icon{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(177,92,255,.4);
+
+    color:var(--purple);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+}
+
+.community-left h2{
+
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.community-left p{
+
+    color:#d0d0d0;
+    line-height:1.8;
+}
+
+.community-links{
+
+    width:420px;
+
+    padding:45px;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.community-link{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(177,92,255,.3);
+}
+
+.community-link span{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.community-link i{
+    color:var(--purple);
+}
+
+
+/* =========================
+   PARTNERS
+========================= */
+
+.partners{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.partners-title{
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    color:#cfcfcf;
+
+    margin-bottom:50px;
+}
+
+.partners-logos{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:80px;
+}
+
+.partner-logo{
+
+    font-size:3rem;
+    font-weight:800;
+
+    opacity:.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#bdbdbd;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .header{
+
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .features{
+
+        grid-template-columns:1fr;
+    }
+
+    .community{
+
+        flex-direction:column;
+    }
+
+    .community-links{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+
+        min-height:350px;
+        padding:80px 20px 50px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .feature-card{
+        padding:30px;
+    }
+
+    .community-left{
+        flex-direction:column;
+    }
+
+    .partners-logos{
+
+        gap:30px;
+    }
+
+    .partner-logo{
+
+        font-size:2rem;
+    }
+
+    .social-icons{
+        gap:18px;
+    }
+}
