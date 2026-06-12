@@ -461,6 +461,10 @@
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
+    box-shadow:
+        0 8px 25px rgba(0,255,136,.08),
+        0 15px 40px rgba(0,255,136,.04);
+
     -webkit-overflow-scrolling:touch;
 
     scrollbar-width:none;
@@ -484,6 +488,12 @@
     border-radius:999px;
 
     flex-shrink:0;
+    .course-category{
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.015);
+}
 }
 
 
