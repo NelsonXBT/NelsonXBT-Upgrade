@@ -190,6 +190,16 @@
 }
 
 
+.lesson-group{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.lesson-group:not(:first-child){
+    display:none;
+}
+
 /* =========================
    LESSON CARD
 ========================= */
@@ -567,6 +577,9 @@
     font-size:.9rem;
 }
 
+ .lesson-card.expanded .lesson-thumbnail{
+        display:block;
+    }
 
 
 
