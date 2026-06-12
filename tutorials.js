@@ -66,27 +66,33 @@ lessonCards.forEach(card => {
         // Close all open lessons
 
         document
-        .querySelectorAll(".lesson-card")
-        .forEach(item => {
+.querySelectorAll(".lesson-card")
+.forEach(item => {
 
-            item.classList.remove("expanded");
+    item.classList.remove("expanded");
 
-            const player =
-            item.querySelector(".video-player");
+    const player =
+    item.querySelector(".video-player");
 
-            if(player){
-                player.remove();
-            }
+    if(player){
+        player.remove();
+    }
 
-            const badge =
-            item.querySelector(".playing-badge");
+    const badge =
+    item.querySelector(".playing-badge");
 
-            if(badge){
-                badge.remove();
-            }
+    if(badge){
+        badge.remove();
+    }
 
-        });
+    const thumbnail =
+    item.querySelector(".lesson-thumbnail");
 
+    if(thumbnail){
+        thumbnail.style.display = "block";
+    }
+
+});
 
         // If same lesson clicked,
         // leave it collapsed
@@ -100,9 +106,15 @@ lessonCards.forEach(card => {
 
         card.classList.add("expanded");
 
+const thumbnail =
+card.querySelector(".lesson-thumbnail");
 
-        const videoURL =
-        card.dataset.video;
+if(thumbnail){
+    thumbnail.style.display = "none";
+}
+
+const videoURL =
+card.dataset.video;
 
 console.log(videoURL);
         card.insertAdjacentHTML(
