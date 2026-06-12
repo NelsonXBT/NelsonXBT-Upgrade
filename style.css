@@ -26,6 +26,7 @@ body{
         linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
 
     background-size:60px 60px;
+    overflow-x:hidden;
 }
 
 
@@ -571,39 +572,129 @@ section{
 
 @media(max-width:600px){
 
-    .hero{
+    /* HEADER */
 
-        min-height:350px;
-        padding:80px 20px 50px;
+    .header{
+        padding:20px 15px;
+        gap:15px;
     }
 
-    .hero h1{
-        font-size:2.3rem;
+    .logo{
+        font-size:1.8rem;
     }
 
-    .hero p{
-        font-size:1rem;
-    }
-
-    .feature-card{
-        padding:30px;
-    }
-
-    .community-left{
-        flex-direction:column;
-    }
-
-    .partners-logos{
-
-        gap:30px;
-    }
-
-    .partner-logo{
-
-        font-size:2rem;
+    .header-right{
+        gap:15px;
     }
 
     .social-icons{
-        gap:18px;
+        gap:12px;
+    }
+
+    .social-icons a{
+        font-size:1rem;
+    }
+
+    .about-btn{
+        padding:10px 20px;
+        font-size:.9rem;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:auto;
+        padding:50px 15px 30px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+
+
+    /* CARDS */
+
+    .features{
+        padding:0 15px 50px;
+    }
+
+    .feature-card{
+        padding:25px;
+    }
+
+    .feature-card h2{
+        font-size:1.8rem;
+    }
+
+    .card-icon{
+        width:70px;
+        height:70px;
+        font-size:1.5rem;
+    }
+
+    /* Prevent overflow */
+    .card-btn{
+        width:100%;
+    }
+
+
+    /* COMMUNITY */
+
+    .community{
+        margin:0 15px;
+        padding:0;
+    }
+
+    .community-left{
+        padding:25px;
+        flex-direction:column;
+    }
+
+    .community-links{
+        width:100%;
+        padding:25px;
+    }
+
+    .community-link{
+        padding:15px;
+        font-size:.9rem;
+    }
+
+
+    /* PARTNERS */
+
+    .partners{
+        padding:50px 15px;
+    }
+
+    .partners-title{
+        font-size:.7rem;
+        letter-spacing:2px;
+        margin-bottom:30px;
+    }
+
+    .partners-logos{
+        gap:15px;
+        flex-wrap:nowrap;
+        justify-content:center;
+    }
+
+    .partners-logos img{
+        height:24px;
+        max-width:65px;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        font-size:.8rem;
+        padding:20px 10px;
     }
 }
