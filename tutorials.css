@@ -1,0 +1,413 @@
+/* =========================
+   TUTORIAL LAYOUT
+========================= */
+
+.tutorial-layout{
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    padding:0 20px;
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:30px;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.tutorial-sidebar{
+
+    background:rgba(6,10,14,.8);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    height:fit-content;
+
+    position:sticky;
+    top:30px;
+
+    box-shadow:
+        0 0 20px rgba(0,255,136,.05);
+}
+
+
+.sidebar-label{
+
+    display:block;
+
+    color:var(--green);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+}
+
+.sidebar-header h1{
+
+    font-size:2.2rem;
+
+    line-height:1.2;
+
+    margin-bottom:35px;
+}
+
+
+/* =========================
+   COURSE MENU
+========================= */
+
+.course-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.course-category{
+
+    width:100%;
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    cursor:pointer;
+
+    color:white;
+
+    transition:.3s;
+}
+
+.course-category:hover{
+
+    border-color:rgba(0,255,136,.3);
+
+    transform:translateY(-2px);
+}
+
+.course-category.active{
+
+    border-color:rgba(0,255,136,.4);
+
+    box-shadow:
+        0 0 15px rgba(0,255,136,.10);
+}
+
+.course-number{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:.9rem;
+
+    flex-shrink:0;
+}
+
+.course-info h3{
+
+    font-size:1rem;
+
+    margin-bottom:5px;
+}
+
+.course-info p{
+
+    font-size:.85rem;
+
+    color:#9a9a9a;
+}
+
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+.tutorial-content{
+
+    min-width:0;
+}
+
+.content-header{
+
+    margin-bottom:25px;
+}
+
+.content-header h2{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   LESSON CONTAINER
+========================= */
+
+#lesson-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+
+/* =========================
+   LESSON CARD
+========================= */
+
+.lesson-card{
+
+    background:rgba(6,10,14,.8);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:25px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.lesson-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:rgba(0,255,136,.15);
+
+    box-shadow:
+        0 0 20px rgba(0,255,136,.05);
+}
+
+
+.lesson-thumbnail{
+
+    overflow:hidden;
+
+    border-radius:16px;
+}
+
+.lesson-thumbnail img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:16px;
+}
+
+
+.lesson-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.lesson-label{
+
+    color:var(--green);
+
+    font-weight:600;
+
+    margin-bottom:15px;
+}
+
+.lesson-details h3{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.lesson-duration{
+
+    color:#a5a5a5;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+
+/* =========================
+   EXPANDED LESSON
+========================= */
+
+.lesson-card.expanded{
+
+    border-color:rgba(182,154,100,.4);
+
+    box-shadow:
+        0 0 25px rgba(182,154,100,.10);
+}
+
+.lesson-card.expanded .lesson-details h3{
+
+    color:var(--gold);
+}
+
+
+/* =========================
+   VIDEO PLAYER
+========================= */
+
+.video-player{
+
+    grid-column:1 / -1;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.video-player iframe{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
+}
+
+
+/* =========================
+   PLAYING BADGE
+========================= */
+
+.playing-badge{
+
+    position:absolute;
+
+    top:15px;
+    right:15px;
+
+    background:var(--gold);
+
+    color:#000;
+
+    font-size:.8rem;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-weight:600;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:1000px){
+
+    .tutorial-layout{
+
+        grid-template-columns:1fr;
+    }
+
+    .tutorial-sidebar{
+
+        position:static;
+    }
+}
+
+
+@media(max-width:700px){
+
+    .tutorial-layout{
+
+        padding:0 15px;
+
+        margin:25px auto;
+    }
+
+    .tutorial-sidebar{
+
+        padding:20px;
+    }
+
+    .sidebar-header h1{
+
+        font-size:1.8rem;
+    }
+
+    .content-header h2{
+
+        font-size:1.6rem;
+    }
+
+    .lesson-card{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    .lesson-details h3{
+
+        font-size:1.5rem;
+
+        margin-bottom:15px;
+    }
+
+    .lesson-thumbnail img{
+
+        width:100%;
+    }
+}
