@@ -486,9 +486,9 @@
     display:flex;
     flex-direction:column;
 
-    padding:18px;
+    padding:14px;
 
-    gap:15px;
+    gap:10px;
 }
 
 
@@ -501,7 +501,8 @@
 .lesson-thumbnail img{
 
     width:100%;
-    aspect-ratio:1.8/1;
+
+    aspect-ratio:10/1;
 
     object-fit:cover;
 
@@ -524,7 +525,7 @@
 
 .lesson-details h3{
 
-    font-size:1.4rem;
+    font-size:1.2rem;
 
     line-height:1.3;
 
