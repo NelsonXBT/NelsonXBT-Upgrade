@@ -370,44 +370,110 @@
 
 @media(max-width:700px){
 
-    .tutorial-layout{
+    /* =========================
+   MOBILE CATEGORY BAR
+========================= */
 
-        padding:0 15px;
+.tutorial-sidebar{
 
-        margin:25px auto;
-    }
+    background:none;
+    border:none;
+    box-shadow:none;
 
-    .tutorial-sidebar{
+    padding:0;
 
-        padding:20px;
-    }
+    position:sticky;
+    top:0;
 
-    .sidebar-header h1{
+    z-index:100;
 
-        font-size:1.8rem;
-    }
+    border-radius:0;
+}
 
-    .content-header h2{
+/* Hide roadmap heading */
 
-        font-size:1.6rem;
-    }
+.sidebar-header{
+    display:none;
+}
 
-    .lesson-card{
 
-        grid-template-columns:1fr;
+/* Horizontal category bar */
 
-        gap:20px;
-    }
+.course-menu{
 
-    .lesson-details h3{
+    flex-direction:row;
 
-        font-size:1.5rem;
+    overflow-x:auto;
 
-        margin-bottom:15px;
-    }
+    gap:10px;
 
-    .lesson-thumbnail img{
+    padding:15px;
 
-        width:100%;
-    }
+    background:#030507;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:none;
+}
+
+.course-menu::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* Category pills */
+
+.course-category{
+
+    width:auto;
+
+    min-width:max-content;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    flex-shrink:0;
+}
+
+
+/* Hide numbers */
+
+.course-number{
+    display:none;
+}
+
+
+/* Hide lesson count */
+
+.course-info p{
+    display:none;
+}
+
+
+/* Category title only */
+
+.course-info h3{
+
+    margin:0;
+
+    font-size:.95rem;
+
+    white-space:nowrap;
+}
+
+
+/* Active category */
+
+.course-category.active{
+
+    background:rgba(0,255,136,.08);
+
+    border-color:rgba(0,255,136,.35);
+
+    box-shadow:
+        0 0 15px rgba(0,255,136,.10);
+}
 }
