@@ -104,32 +104,34 @@ lessonCards.forEach(card => {
         const videoURL =
         card.dataset.video;
 
-
+console.log(videoURL);
         card.insertAdjacentHTML(
 
-            "beforeend",
+    "beforeend",
 
-            `
-            <div class="video-player">
+    `
+    <div class="video-player">
 
-                <iframe
-                    src="${videoURL}?autoplay=1"
-                    allow="accelerometer;
-                           autoplay;
-                           clipboard-write;
-                           encrypted-media;
-                           gyroscope;
-                           picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+        <iframe
+            src="${videoURL}"
+            title="YouTube video player"
+            allow="accelerometer;
+                   clipboard-write;
+                   encrypted-media;
+                   gyroscope;
+                   picture-in-picture;
+                   web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
 
-            </div>
+    </div>
 
-            <div class="playing-badge">
-                Playing
-            </div>
-            `
-        );
+    <div class="playing-badge">
+        Playing
+    </div>
+    `
+);
 
 
         card.scrollIntoView({
