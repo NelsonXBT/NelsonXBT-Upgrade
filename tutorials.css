@@ -359,6 +359,7 @@
     .tutorial-layout{
 
         grid-template-columns:1fr;
+        
     }
 
     .tutorial-sidebar{
@@ -389,6 +390,23 @@
 
     border-radius:0;
 }
+
+ .tutorial-layout{
+        padding:0;
+        gap:15px;
+    }
+
+    .tutorial-content{
+        width:100%;
+        min-width:0;
+        overflow:hidden;
+    }
+
+    #lesson-container{
+        width:100%;
+        padding:0 15px;
+    }
+
 
 /* Hide roadmap heading */
 
@@ -489,6 +507,8 @@
     padding:14px;
 
     gap:10px;
+    width:100%;
+    min-width:0;
 }
 
 
@@ -540,4 +560,8 @@
 
 
 
+}
+
+*{
+    outline:1px solid red;
 }
