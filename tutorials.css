@@ -223,16 +223,20 @@
     cursor:pointer;
 
     transition:.3s;
+
+    box-shadow:
+        0 0 30px rgba(0,255,136,.06);
 }
 
 .lesson-card:hover{
 
     transform:translateY(-3px);
 
-    border-color:rgba(0,255,136,.15);
+    border-color:rgba(0,255,136,.25);
 
     box-shadow:
-        0 0 20px rgba(0,255,136,.05);
+        0 0 25px rgba(0,255,136,.08),
+        0 0 50px rgba(0,255,136,.04);
 }
 
 
@@ -298,10 +302,11 @@
 
 .lesson-card.expanded{
 
-    border-color:rgba(182,154,100,.4);
+    border-color:rgba(182,154,100,.45);
 
     box-shadow:
-        0 0 25px rgba(182,154,100,.10);
+        0 0 25px rgba(182,154,100,.10),
+        0 0 50px rgba(182,154,100,.05);
 }
 
 .lesson-card.expanded .lesson-details h3{
