@@ -376,13 +376,15 @@ section{
 .green-btn{
 
     border:1px solid var(--green);
-    color:var(--green);
+    box-shadow:
+        0 0 20px rgba(0,255,136,.15);
 }
 
 .gold-btn{
 
     border:1px solid var(--gold);
-    color:var(--gold);
+    box-shadow:
+        0 0 20px rgba(182,154,100,.15);
 }
 
 .card-btn:hover{
@@ -488,6 +490,15 @@ section{
     color:var(--purple);
 }
 
+.community-link{
+    transition:.3s;
+}
+
+.community-link:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 15px rgba(177,92,255,.12);
+}
 
 /* =========================
    PARTNERS
