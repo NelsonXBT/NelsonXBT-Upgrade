@@ -488,12 +488,13 @@
     border-radius:999px;
 
     flex-shrink:0;
-    .course-category{
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
 
-    background:rgba(255,255,255,.015);
-}
+    background:rgba(255,255,255,.02);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.03);
 }
 
 
@@ -529,10 +530,11 @@
 
     background:rgba(0,255,136,.08);
 
-    border-color:rgba(0,255,136,.35);
+    border-color:rgba(0,255,136,.45);
 
     box-shadow:
-        0 0 15px rgba(0,255,136,.10);
+        0 0 20px rgba(0,255,136,.18),
+        0 0 40px rgba(0,255,136,.08);
 }
 
 
