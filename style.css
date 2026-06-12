@@ -20,11 +20,14 @@ html{
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#030507;
-    color:#ffffff;
-    overflow-x:hidden;
+    background-color:#030507;
+    background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+    background-size:60px 60px;
 }
+
 
 
 /* =========================
@@ -201,6 +204,8 @@ section{
     position:relative;
     z-index:2;
 }
+
+
 
 .hero h1{
 
