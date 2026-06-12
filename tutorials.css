@@ -375,6 +375,18 @@
    MOBILE CATEGORY BAR
 ========================= */
 
+.content-header{
+    padding:0 15px;
+    margin-bottom:15px;
+}
+
+.content-header h2{
+    font-size:1.8rem;
+    line-height:1.2;
+    margin:0;
+}
+
+
 .tutorial-sidebar{
 
     background:none;
@@ -392,18 +404,21 @@
 }
 
  .tutorial-layout{
-        padding:0;
-        gap:15px;
-    }
+    display:block;
+    width:100%;
+    max-width:100%;
+    padding:0;
+    margin:20px 0;
+}
 
     .tutorial-content{
-        width:100%;
-        min-width:0;
-        overflow:hidden;
-    }
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    overflow:hidden;
+}
 
-    #lesson-container{
-        width:100%;
+  #lesson-container{
         padding:0 15px;
     }
 
@@ -499,30 +514,25 @@
 
 
 
-.lesson-card{
-
-    display:flex;
-    flex-direction:column;
-
-    padding:14px;
-
-    gap:10px;
+ .lesson-card{
+    display:block;
     width:100%;
-    min-width:0;
+    padding:14px;
+    box-sizing:border-box;
 }
 
 
-
 .lesson-thumbnail{
-
+    display:none;
     width:100%;
+    margin-bottom:18px;
 }
 
 .lesson-thumbnail img{
 
     width:100%;
 
-    aspect-ratio:10/1;
+    aspect-ratio:16/9;
 
     object-fit:cover;
 
@@ -562,6 +572,6 @@
 
 }
 
-*{
+/* *{
     outline:1px solid red;
-}
+} */
