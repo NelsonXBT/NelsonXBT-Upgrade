@@ -27,6 +27,7 @@ body{
 
     background-size:60px 60px;
     overflow-x:hidden;
+    color:#ffffff;
 }
 
 
@@ -697,4 +698,8 @@ section{
         font-size:.8rem;
         padding:20px 10px;
     }
+}
+
+*{
+    outline:1px solid red;
 }
