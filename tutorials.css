@@ -533,7 +533,7 @@
 
 
 .lesson-thumbnail{
-    display:none;
+    display:block;
     width:100%;
     margin-bottom:18px;
 }
