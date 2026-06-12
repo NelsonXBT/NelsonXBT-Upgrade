@@ -33,7 +33,7 @@ body{
 
 :root{
 
-    --gold:#f5a623;
+    --gold:#c28a21;
     --green:#00ff88;
     --purple:#b15cff;
 
@@ -71,9 +71,9 @@ section{
     background:var(--green);
 }
 
-.gold{
+/* .gold{
     background:var(--gold);
-}
+} */
 
 .purple{
     background:var(--purple);
@@ -160,7 +160,7 @@ section{
 
 .hero{
 
-    min-height:500px;
+    min-height:350px;
 
     display:flex;
     align-items:center;
@@ -168,7 +168,7 @@ section{
 
     text-align:center;
 
-    padding:120px 20px 80px;
+    padding:60px 20px 30px;
 
     position:relative;
 }
