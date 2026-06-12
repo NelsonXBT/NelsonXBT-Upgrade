@@ -92,6 +92,20 @@ lessonCards.forEach(card => {
         thumbnail.style.display = "block";
     }
 
+  const title =
+item.querySelector(".lesson-details h3");
+
+if(title){
+    title.style.display = "block";
+}
+
+const duration =
+item.querySelector(".lesson-duration");
+
+if(duration){
+    duration.style.display = "flex";
+}
+
 });
 
         // If same lesson clicked,
@@ -115,6 +129,20 @@ if(thumbnail){
 
 const videoURL =
 card.dataset.video;
+
+const title =
+card.querySelector(".lesson-details h3");
+
+if(title){
+    title.style.display = "none";
+}
+
+const duration =
+card.querySelector(".lesson-duration");
+
+if(duration){
+    duration.style.display = "none";
+}
 
 console.log(videoURL);
         card.insertAdjacentHTML(
