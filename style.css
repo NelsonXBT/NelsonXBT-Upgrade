@@ -17,6 +17,8 @@
 
 html{
     scroll-behavior:smooth;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
 body{
@@ -197,6 +199,8 @@ section{
     left:50%;
 
     transform:translate(-50%,-50%);
+    width:600px;
+    height:600px;
 }
 
 .hero-content{
@@ -576,9 +580,9 @@ section{
     /* HEADER */
 
     .header{
-        padding:20px 15px;
-        gap:15px;
-    }
+    width:100%;
+    padding:20px 10px;
+}
 
     .logo{
         font-size:1.8rem;
@@ -604,11 +608,15 @@ section{
 
     /* HERO */
 
-    .hero{
-        min-height:auto;
-        padding:50px 15px 30px;
-    }
 
+.hero{
+    overflow:hidden;
+}
+
+.hero::before{
+    width:350px;
+    height:350px;
+}
     .hero h1{
         font-size:2.2rem;
     }
@@ -622,8 +630,9 @@ section{
     /* CARDS */
 
     .features{
-        padding:0 15px 50px;
-    }
+    width:calc(100% - 30px);
+    margin:auto;
+}
 
     .feature-card{
         padding:25px;
@@ -648,9 +657,10 @@ section{
     /* COMMUNITY */
 
     .community{
-        margin:0 15px;
-        padding:0;
-    }
+    width:calc(100% - 30px);
+    margin:0 auto;
+    padding:0;
+}
 
     .community-left{
         padding:25px;
