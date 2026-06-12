@@ -497,22 +497,23 @@ section{
 }
 
 .partners-logos{
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    flex-wrap:wrap;
-
     gap:80px;
+    flex-wrap:wrap;
 }
 
-.partner-logo{
-
-    font-size:3rem;
-    font-weight:800;
-
+.partners-logos img{
+    height:45px;
+    width:auto;
     opacity:.9;
+    transition:.3s;
+}
+
+.partners-logos img:hover{
+    opacity:1;
+    transform:translateY(-2px);
 }
 
 
