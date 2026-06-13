@@ -1,0 +1,696 @@
+/* =========================================
+   PAGE WRAPPER
+========================================= */
+
+.coaching-page{
+
+    max-width:1400px;
+
+    margin:50px auto 80px;
+
+    padding:0 20px;
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.coaching-hero{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:30px;
+
+    align-items:center;
+
+    max-width:1150px;
+
+    margin:0 auto 70px;
+    margin-bottom:70px;
+}
+
+.hero-content{
+
+    max-width:600px;
+}
+
+
+.hero-content h1{
+
+    font-size:3.3rem;
+
+    line-height:1.05;
+
+    margin-bottom:18px;
+
+    max-width:650px;
+}
+
+
+
+.hero-content h1 span{
+
+    display:block;
+
+    color:var(--gold);
+}
+
+
+.hero-content p{
+
+    max-width:520px;
+
+    font-size:1.05rem;
+
+    line-height:1.7;
+}
+
+
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+}
+
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:500px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(
+        0 0 25px rgba(182,154,100,.15)
+    );
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.cta-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:15px;
+
+    padding:16px 30px;
+
+    background:var(--gold);
+
+    color:#000;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    transition:.3s;
+}
+
+
+.cta-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(182,154,100,.35);
+}
+
+
+.price-tag{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:25px;
+
+    color:var(--gold);
+
+    font-size:1.3rem;
+
+    font-weight:700;
+}
+
+
+
+/* =========================================
+   SECTION TITLES
+========================================= */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+
+.section-title h2{
+
+    font-size:2.2rem;
+
+    margin-bottom:12px;
+}
+
+
+.section-title .line{
+
+    width:70px;
+
+    margin:auto;
+}
+
+
+
+/* =========================
+   SOUND FAMILIAR
+========================= */
+
+.challenges{
+
+    max-width:850px;
+
+    margin:0 auto 40px;
+    margin-bottom:25px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.02);
+}
+
+.challenge-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    max-width:760px;
+
+    margin:0 auto;
+}
+
+
+.challenge-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:12px 18px;
+
+    min-height:56px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.04);
+}
+
+
+.challenge-card:hover{
+
+    transform:none;
+}
+
+
+.challenge-icon{
+
+    width:28px;
+
+    height:28px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--gold);
+
+    font-size:.95rem;
+}
+
+
+.challenge-card p{
+
+    font-size:1rem;
+
+    line-height:1.4;
+
+    color:#e5e5e5;
+}
+
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.coaching-process{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.02);
+
+    margin-bottom:50px;
+}
+
+.process-column{
+
+    padding-right:40px;
+
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+
+.benefits-column{
+
+    padding-left:10px;
+}
+
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+
+.timeline-step{
+
+    display:flex;
+
+    gap:15px;
+}
+
+
+.timeline-number{
+
+    width:38px;
+    height:38px;
+
+    font-size:.9rem;
+}
+
+
+.timeline-content h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:4px;
+}
+
+
+.timeline-content p{
+
+    color:#bfbfbf;
+
+    line-height:1.6;
+}
+
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+
+.timeline-step{
+
+    display:flex;
+
+    gap:20px;
+}
+
+
+.timeline-number{
+
+    width:50px;
+
+    height:50px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:#000;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+.timeline-content h3{
+
+    margin-bottom:8px;
+
+    font-size:1.1rem;
+}
+
+
+.timeline-content p{
+
+    color:#bcbcbc;
+
+    line-height:1.7;
+}
+
+
+
+/* =========================
+   WHAT YOU GET
+========================= */
+
+.benefits-column{
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.02);
+}
+
+
+.benefits-list li{
+
+    padding:10px 0;
+
+    font-size:1rem;
+}
+
+
+.benefits-list li{
+
+    padding:14px 0;
+
+    padding-left:35px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    position:relative;
+
+    font-size:1.05rem;
+}
+
+
+.benefits-list li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    top:13px;
+
+    color:var(--gold);
+
+    font-weight:700;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta-box{
+
+    background:#030507;
+
+    border:1px solid rgba(182,154,100,.25);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    display:grid;
+
+    grid-template-columns:220px 1fr 260px;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+
+.cta-icon{
+
+    font-size:4rem;
+
+    color:var(--gold);
+
+    text-align:center;
+}
+
+
+.cta-center{
+
+    text-align:center;
+}
+
+
+.cta-center h2{
+
+    font-size:4rem;
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+}
+
+
+.cta-center h3{
+
+    font-size:1.7rem;
+
+    margin-bottom:10px;
+}
+
+
+.cta-center p{
+
+    color:#c7c7c7;
+
+    margin-bottom:20px;
+}
+
+
+.cta-features li{
+
+    margin-bottom:18px;
+
+    color:#e4e4e4;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.coaching-note{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:flex-start;
+
+    padding:22px 28px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(182,154,100,.15);
+
+    background:rgba(255,255,255,.02);
+}
+
+
+.note-icon{
+
+    font-size:3rem;
+
+    color:var(--gold);
+}
+
+
+.note-content h3{
+
+    margin-bottom:12px;
+
+    color:var(--gold);
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:1100px){
+
+    .coaching-hero{
+
+        grid-template-columns:1fr;
+    }
+
+   .coaching-process{
+
+    grid-template-columns:1fr;
+
+    padding:25px;
+}
+
+    .challenge-grid{
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    .cta-box{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .cta-features{
+
+        text-align:left;
+    }
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:700px){
+
+    .coaching-page{
+
+        padding:0 15px;
+    }
+
+    .hero-content{
+
+        text-align:center;
+    }
+
+    .hero-content h1{
+
+    font-size:2.7rem;
+
+    line-height:1.1;
+}
+
+    .challenge-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .challenge-card{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .section-title h2{
+
+        font-size:1.8rem;
+    }
+
+    .cta-center h2{
+
+        font-size:3.5rem;
+    }
+
+    .cta-center h3{
+
+        font-size:1.4rem;
+    }
+
+    .coaching-note{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .process-column,
+    .benefits-column{
+
+        padding:25px;
+    }
+
+    .process-column{
+
+    border-right:none;
+
+    padding-right:0;
+
+    margin-bottom:20px;
+}
+
+}
