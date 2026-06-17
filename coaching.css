@@ -94,11 +94,11 @@
     );
 }
 
-.hero-image-desktop{
+.hero-media-desktop{
     display:flex;
 }
 
-.mobile-image{
+.hero-media-mobile{
     display:none;
 }
 
@@ -682,11 +682,11 @@
 }
 
 
-.desktop-image{
+.hero-media-desktop{
         display:none;
     }
 
-    .mobile-image{
+    .hero-media-mobile{
         display:block;
     }
 
