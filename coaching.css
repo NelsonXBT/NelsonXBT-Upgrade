@@ -81,15 +81,16 @@
 }
 
 
-.hero-image img{
+.hero-image img,
+.hero-image video{
 
     width:100%;
 
     max-width:500px;
-    
+
     margin-bottom:20px;
 
-    object-fit:contain;
+    object-fit:cover;
 
     filter:drop-shadow(
         0 0 25px rgba(182,154,100,.15)
