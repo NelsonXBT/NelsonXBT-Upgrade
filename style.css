@@ -167,7 +167,7 @@ section{
 
 .hero{
 
-    min-height:350px;
+    min-height:200px;
 
     display:flex;
     align-items:center;
@@ -175,7 +175,7 @@ section{
 
     text-align:center;
 
-    padding:60px 20px 30px;
+    padding:30px 10px 40px;
 
     position:relative;
 }
