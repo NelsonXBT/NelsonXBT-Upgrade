@@ -73,17 +73,19 @@
             </h1>
 
 
-            <div class="hero-image hero-media-mobile">
+            <div class="hero-image hero-media-mobile video-wrapper">
 
-             <video controls poster="thumbnail.jpg">
+                <video id="coachVideoMobile" poster="assets/coaching/thumbnail.jpeg">
 
-        <source
-            src="assets/video/coaching-video.mp4"
-            type="video/mp4">
+                <source src="assets/video/coaching-video.mp4" type="video/mp4">
 
-    </video>
+                </video>
 
-        </div>
+                <button class="play-overlay">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+            </div>
 
 
             <p>
@@ -117,15 +119,17 @@
 
         </div>
 
-        <div class="hero-image hero-media-desktop">
+        <div class="hero-image hero-media-desktop video-wrapper">
 
-                <video controls poster="thumbnail.jpg">
+         <video id="coachVideoDesktop" poster="assets/coaching/thumbnail.jpeg">
 
-        <source
-            src="assets/video/coaching-video.mp4"
-            type="video/mp4">
+                <source src="assets/video/coaching-video.mp4" type="video/mp4">
 
-    </video>
+                </video>
+
+                <button class="play-overlay">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
         </div>
         
@@ -519,6 +523,10 @@
 
 </footer>
 
+
+<!-- JS -->
+
+    <script src="coaching.js"></script>
 
 </body>
 </html>
