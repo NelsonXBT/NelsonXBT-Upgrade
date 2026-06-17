@@ -472,6 +472,7 @@
         justify-content:center;
 
         font-size:.8rem;
+        
     }
 
 
@@ -482,12 +483,26 @@
 }
 
 
+.section-heading h2{
+
+
+    font-size:1.1rem;
+
+}
 
 
     .platforms-grid{
 
-        grid-template-columns:1fr;
-    }
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.platform-logo img{
+
+    max-width:100px;
+}
+
 
     .quote-section blockquote{
 
@@ -507,6 +522,28 @@
 
 
 
+        .social-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+}
+
+
+.social-card{
+
+    padding:15px 10px;
+}
+
+.social-card i{
+
+    font-size:1.5rem;
+}
+
+.social-card span{
+
+    font-size:.8rem;
+}
 
 
 }
