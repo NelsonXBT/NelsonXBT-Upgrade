@@ -635,14 +635,25 @@
     .hero-content{
 
         text-align:center;
+        
     }
 
     .hero-content h1{
 
-    font-size:2.7rem;
+    font-size:2.2rem;
 
     line-height:1.1;
 }
+
+
+.hero-content p{
+
+    font-size:.95rem;
+
+    line-height:1.6;
+}
+
+
 
     .challenge-grid{
 
@@ -651,10 +662,23 @@
 
     .challenge-card{
 
-        flex-direction:column;
+    flex-direction:row;
 
-        text-align:center;
-    }
+    text-align:left;
+
+    padding:10px 14px;
+
+    min-height:auto;
+}
+
+.challenge-card p{
+
+    font-size:.9rem;
+
+    line-height:1.4;
+}
+
+
 
     .section-title h2{
 
