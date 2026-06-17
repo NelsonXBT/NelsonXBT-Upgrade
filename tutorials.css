@@ -176,6 +176,7 @@
 }
 
 
+
 /* =========================
    LESSON CONTAINER
 ========================= */
@@ -226,6 +227,7 @@
 
     box-shadow:
         0 0 30px rgba(0,255,136,.06);
+        position:relative;
 }
 
 .lesson-card:hover{
@@ -238,6 +240,8 @@
         0 0 25px rgba(0,255,136,.08),
         0 0 50px rgba(0,255,136,.04);
 }
+
+
 
 
 .lesson-thumbnail{
@@ -302,17 +306,26 @@
 
 .lesson-card.expanded{
 
+    position:relative;
+    padding: 15px;
+
+    gap:10px;
+
     border-color:rgba(182,154,100,.45);
 
     box-shadow:
         0 0 25px rgba(182,154,100,.10),
         0 0 50px rgba(182,154,100,.05);
+        
+        
 }
 
 .lesson-card.expanded .lesson-details h3{
 
     color:var(--gold);
+    
 }
+
 
 
 /* =========================
@@ -323,7 +336,11 @@
 
     grid-column:1 / -1;
 
-    margin-top:20px;
+    width:100%;
+
+    max-width:750px;
+
+    margin:20px auto 0;
 
     border-radius:20px;
 
