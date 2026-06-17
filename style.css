@@ -726,6 +726,7 @@ section{
 
 .hero{
     overflow:hidden;
+    
 }
 
 .hero::before{
