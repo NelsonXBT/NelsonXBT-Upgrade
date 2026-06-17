@@ -691,7 +691,9 @@
 
     .hero-media-mobile{
         display:block;
-    }
+        margin-top:25px;
+        margin-bottom:25px;
+        }
 
 
 
