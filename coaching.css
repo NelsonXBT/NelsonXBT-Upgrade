@@ -94,7 +94,10 @@
 
     filter:drop-shadow(
         0 0 25px rgba(182,154,100,.15)
+        
     );
+
+    border-radius:16px;
 }
 
 .hero-media-desktop{
