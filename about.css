@@ -2,6 +2,19 @@
    PAGE WRAPPER
 ========================================= */
 
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+
+
+
+
 .about-page{
 
     max-width:1200px;
@@ -491,18 +504,23 @@
 }
 
 
-    .platforms-grid{
+  .platforms-grid{
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
 
     gap:20px;
 }
 
 .platform-logo img{
 
-    max-width:100px;
-}
+    width:100%;
 
+    max-width:80px;
+
+    height:auto;
+
+    display:block;
+}
 
     .quote-section blockquote{
 
@@ -533,6 +551,7 @@
 .social-card{
 
     padding:15px 10px;
+    min-width:0;
 }
 
 .social-card i{
