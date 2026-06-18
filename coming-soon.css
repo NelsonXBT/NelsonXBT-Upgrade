@@ -1,0 +1,268 @@
+/* =========================================
+   PAGE WRAPPER
+========================================= */
+
+.coming-soon-page{
+
+    min-height:calc(100vh - 180px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:150px 20px;
+}
+
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.coming-soon-content{
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:auto;
+}
+
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.coming-icon{
+
+    font-size:6rem;
+
+    color:var(--gold);
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 25px rgba(182,154,100,.35),
+        0 0 60px rgba(182,154,100,.15);
+}
+
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.coming-soon-content h1{
+
+    font-size:4rem;
+
+    line-height:1;
+
+    margin-bottom:15px;
+}
+
+.coming-soon-content h1 span{
+
+    color:var(--gold);
+}
+
+
+
+/* =========================================
+   LINE
+========================================= */
+
+.line{
+
+    width:70px;
+
+    height:3px;
+
+    background:var(--gold);
+
+    margin:0 auto 20px;
+}
+
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.coming-text{
+
+    font-size:1.35rem;
+
+    line-height:1.8;
+
+    color:#d7d7d7;
+
+    max-width:620px;
+
+    margin:0 auto 20px;
+}
+
+.coming-subtext{
+
+    font-size:1.8rem;
+
+    color:#f2f2f2;
+
+    margin-bottom:30px;
+}
+
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.home-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px 28px;
+
+    border:1px solid rgba(182,154,100,.6);
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:var(--gold);
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.home-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(182,154,100,.08);
+
+    box-shadow:
+        0 0 25px rgba(182,154,100,.15);
+}
+
+.home-btn i{
+
+    font-size:1.3rem;
+}
+
+
+
+/* =========================================
+   GOLD GLOW
+========================================= */
+
+.coming-soon-content::after{
+
+    content:"";
+
+    display:block;
+
+    width:260px;
+
+    height:70px;
+
+    margin:90px auto 0;
+
+    background:radial-gradient(
+        ellipse,
+        rgba(182,154,100,.35) 0%,
+        rgba(182,154,100,.12) 40%,
+        transparent 75%
+    );
+
+    filter:blur(20px);
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:900px){
+
+    .coming-soon-content h1{
+
+        font-size:4rem;
+    }
+
+    .coming-text{
+
+        font-size:1.15rem;
+    }
+
+    .coming-subtext{
+
+        font-size:1.5rem;
+    }
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:700px){
+
+    .coming-soon-page{
+
+        padding:100px 15px;
+    }
+
+    .coming-icon{
+
+        font-size:4.5rem;
+
+        margin-bottom:25px;
+    }
+
+    .coming-soon-content h1{
+
+        font-size:2rem;
+    }
+
+    .coming-text{
+
+        font-size:1rem;
+
+        line-height:1.7;
+    }
+
+    .coming-subtext{
+
+        font-size:1.1rem;
+
+        margin-bottom:35px;
+    }
+
+    .home-btn{
+
+        padding:8px 10px;
+
+        font-size:0.8rem;
+    }
+
+    .coming-soon-content::after{
+
+        width:180px;
+
+        margin-top:60px;
+    }
+
+}
