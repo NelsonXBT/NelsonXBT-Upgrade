@@ -8,6 +8,9 @@ document.querySelectorAll(".course-category");
 const lessonGroups =
 document.querySelectorAll(".lesson-group");
 
+const moduleTitle =
+document.querySelector("#module-title");
+
 
 
 // ========================================
@@ -28,6 +31,12 @@ categoryButtons.forEach(button => {
         });
 
         button.classList.add("active");
+
+        const categoryName =
+        button.querySelector(".course-info h3").textContent;
+
+        moduleTitle.textContent =
+        `Lessons in ${categoryName}`;
 
         lessonGroups.forEach(group => {
 
@@ -197,6 +206,20 @@ lessonGroups.forEach(group => {
     group.style.display = "none";
 
 });
+
+const activeButton =
+document.querySelector(".course-category.active");
+
+if(activeButton){
+
+    const categoryName =
+    activeButton
+    .querySelector(".course-info h3")
+    .textContent;
+
+    moduleTitle.textContent =
+    `Lessons in ${categoryName}`;
+}
 
 const firstGroup =
 document.querySelector(
